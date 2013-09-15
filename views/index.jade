@@ -1,0 +1,60 @@
+!!! 5
+html
+    head
+        title Hiren || IP Checker
+        meta(name='description', content='Ip address checker')
+        meta(name='keywords', content='What is my ip')
+        meta(name='author', content='Prism')
+        meta(charset='UTF-8')
+        link(rel='stylesheet', href='http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css')
+        link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css')
+        script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+        script(src='http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js')
+        link(rel='stylesheet', href='stylesheets/custom.css')
+    body
+        .container
+            .row
+                .span12
+                    header.well.well-lg.page-header
+                        h1
+                            a(href='http://ip.pyprism.net') What The Fuc* Is My IP Address?
+                        em Simple IP Address Checker for Terminal
+        .container
+            .span12
+                br
+                br
+                br
+                .panel.panel-default
+                    .panel-heading Your Connection
+                    table.table.table-hover.table-bordered.table-responsive
+                        tr
+                            td IP Address
+                            td #{ip}
+                        tr
+                            td User Agent
+                            td #{ua}
+            br
+            br
+            br
+            .panel.panel-default
+                .panel-heading Commandline Interface
+                table.table.table-hover.table-bordered.table-responsive
+                    tr
+                        td $ curl myifconfig.tk
+                        td #{ip}
+                    tr
+                        td $ curl myifconfig.tk/ua
+                        td #{ua}
+        footer
+            .container
+                p
+                    | Simple IP checker for Terminal! by
+                    a(href='http://www.pyprism.net', rel='author')  Prism
+                    | . Uses
+                    a(href='http://twitter.github.com/bootstrap/', rel='external')  Twitter Bootstrap
+                    |  and
+                    a(href='http://expressjs.com', rel='external')  Expressjs
+                    | .
+                    | Source Code on
+                    a(href="#" rel='external')  Github
+
