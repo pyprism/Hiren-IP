@@ -19,6 +19,6 @@ exports.ua = function(req,res){
         res.end("User_Agent: " + req.headers['user-agent']);
     }
     else{
-        req.end('<h2>User Agent:' + req.headers['user-agent'] + '</h2>');
+        res.end('<h2>User Agent:' + req.headers['user-agent'] + '</h2>');
     }
 }
