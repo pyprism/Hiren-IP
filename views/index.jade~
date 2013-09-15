@@ -56,4 +56,5 @@ html
                     a(href='http://expressjs.com', rel='external')  Expressjs
                     | .
                     | Source Code on
-                    a(href="https://github.com/pyprism/hiren-ip" rel='external')  Github
+                    a(href="#" rel='external')  Github
+
