@@ -5,7 +5,7 @@
 var S = require('string');
 
 exports.root = function(req, res){
-    if(req.headers['user-agent'] == "curl/7.29.0"){
+    if(S(req.headers['user-agent']).startsWith("curl")){
         res.end("IP_Addrs: "+ req.ip );
     }
     else{
