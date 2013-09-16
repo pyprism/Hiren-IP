@@ -21,5 +21,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', routes.root);
 app.get('/ua', routes.ua);
 
+//For 404
+
+app.use(function(req, res, next){
+    res.status(404).render('404_error_template', {title: "Sorry, page not found"});
+});
+
 
 app.listen(2000)  ;

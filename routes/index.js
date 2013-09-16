@@ -2,6 +2,7 @@
 /*
  * GET home page.
  */
+var S = require('string');
 
 exports.root = function(req, res){
     if(req.headers['user-agent'] == "curl/7.29.0"){
@@ -15,10 +16,10 @@ exports.root = function(req, res){
 };
 
 exports.ua = function(req,res){
-    if(req.headers['user-agent'] == "curl/7.29.0"){
+    if(S(req.headers['user-agent']).startsWith("curl")){
         res.end("User_Agent: " + req.headers['user-agent']);
     }
     else{
         res.end('User Agent:' + req.headers['user-agent']);
     }
-}
+};
