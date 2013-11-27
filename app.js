@@ -22,8 +22,8 @@ app.get('/ua', routes.ua);
 
 //For 404
 
-app.use(function(req, res, next){
-    res.status(404).render('404_error_template', {title: "Sorry, page not found"});
+app.get('*', function(req, res){
+  res.send('Page not found', 404);
 });
 
 
