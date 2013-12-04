@@ -1,9 +1,6 @@
-
-/*
- * GET home page.
- */
 var S = require('string');
 
+//index view
 exports.root = function(req, res){
     if(S(req.headers['user-agent']).startsWith("curl")){
         res.end("IP_Addrs: "+ req.ip );
@@ -15,6 +12,7 @@ exports.root = function(req, res){
 
 };
 
+//commandline view "/ua"
 exports.ua = function(req,res){
     if(S(req.headers['user-agent']).startsWith("curl")){
         res.end("User_Agent: " + req.headers['user-agent']);
