@@ -5,8 +5,8 @@
 var express = require('express');
 var routes = require('./routes');
 var http = require('http');
-var path = require('path');
-
+var path = require('path') ,
+exphbs  = require('express3-handlebars'),
 var app = express();
 
 // all environments
