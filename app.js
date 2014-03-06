@@ -11,6 +11,7 @@ app = express();
 
 // all environments
 app.set('views', __dirname + '/views');
+app.engine('handlebars', exphbs({defaultLayout: 'index'}));
 app.set('view engine', 'handlebars');
 app.use(express.favicon(__dirname + '/public/favicon.ico'));
 app.use(app.router);
@@ -23,7 +24,7 @@ app.get('/ua', routes.ua);
 //For 404
 
 app.get('*', function(req, res){
-  res.send('Page not found', 404);
+  res.send('<h1>Opps!Page not found</h1>', 404);
 });
 
 
