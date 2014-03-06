@@ -7,7 +7,7 @@ var routes = require('./routes');
 var http = require('http');
 var path = require('path') ,
 exphbs  = require('express3-handlebars'),
-var app = express();
+app = express();
 
 // all environments
 app.set('views', __dirname + '/views');
