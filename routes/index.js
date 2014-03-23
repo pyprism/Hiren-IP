@@ -21,3 +21,7 @@ exports.ua = function(req,res){
         res.end('User Agent:' + req.headers['user-agent']);
     }
 };
+//Commandline view of public ip for Hiren-Monitor App
+exports.ip = function(req,res){
+        res.end(req.ip);
+};

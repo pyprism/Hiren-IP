@@ -20,7 +20,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', routes.root);
 app.get('/ua', routes.ua);
-
+app.get('/ip',routes.ip);
 //For 404
 
 app.get('*', function(req, res){
