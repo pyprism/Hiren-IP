@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hiren</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/style/bootstrap.min.css" rel="stylesheet">
+    <link href="style/custom.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="page-header">
+        <a href="#"><h1>Hiren <br/><small>What The F$ck Is My IP!</small></h1></a>
+    </div>
+</div>
+<br/>
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading"><h4>Your Connection :</h4></div>
+        <table class="table table-bordered table-hover">
+            <tbody>
+            <tr>
+                <td>IP Address</td>
+                <td><%= ip %></td>
+            </tr>
+            <tr>
+                <td>User Agent</td>
+                <td><%= ua %></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+</div>
+<br/>
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading"><h4>For Command Line </h4></div>
+        <table class="table table-bordered table-hover">
+            <tbody>
+            <tr>
+                <td>$ curl ip.pyprism.me</td>
+                <td><%= ip %></td>
+            </tr>
+            <tr>
+                <td>$ curl ip.pyprism.me/ua</td>
+                <td><%= ua %></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<pre id="address_current"></pre>
+<div id="map" style="border: 2px solid #3872ac;"></div>
+
+<script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?sensor=true&libraries=geometry,places&ext=.js"></script>
+<script src="/script/map.js"></script>
+</body>
+</html>
