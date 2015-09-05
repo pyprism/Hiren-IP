@@ -1,0 +1,25 @@
+{
+  "name": "hiren-ip",
+  "version": "1.0.0",
+  "description": "hiren-ip [![Dependency Status](https://david-dm.org/pyprism/Hiren-IP.svg)](https://david-dm.org/pyprism/Hiren-IP) ========",
+  "main": "hiren.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pyprism/Hiren-IP.git"
+  },
+  "author": "Ashutosh Das",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pyprism/Hiren-IP/issues"
+  },
+  "homepage": "https://github.com/pyprism/Hiren-IP#readme",
+  "dependencies": {
+    "ejs": "^2.3.3",
+    "express": "^4.13.3",
+    "newrelic": "^1.22.0",
+    "serve-favicon": "^2.3.0"
+  }
+}
