@@ -1,7 +1,8 @@
 /**
  * Created by prism on 9/5/15.
  */
-//require('newrelic');
+
+require('newrelic');
 var express = require('express'),
     favicon = require('serve-favicon');
 
